@@ -9,16 +9,15 @@ function App() {
         <span>emojipedia</span>
       </h1>
       <dl className="dictionary">
-        {emojipedia.map(emoji => {
-          return (
-          <Emoji 
-          key= {emoji.id}
-          emoji = {emoji.emoji}
-          name = {emoji.name}
-          meaning = {emoji.meaning}
+        {emojipedia.map(emoji => (
+          <Emoji
+            key={emoji.id}
+            emoji={emoji.emoji}
+            name={emoji.name}
+            meaning={emoji.meaning}
           />
-          )
-        })}
+        )
+        )}
       </dl>
     </div>
   );
